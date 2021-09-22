@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,
+div,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+img,
+p,
+pre {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #ffffff;
+    font-family: Noto Sans, Helvetica, sans-serif;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    letter-spacing: 0px;
+}
+.as-header {
+    background-color: #003777;
+    /* padding: 20px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    position: relative;
+}
+.as-header h3 {
+    color: #fff;
+    font-size: 20px;
+    padding: 0px 20px;
+}
+.searchIconWrp {
+    padding: 0px 20px;
+    cursor: pointer;
+    height: 100%;
+    min-width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchIput {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #003777;
+}
+.searchIput input {
+    width: 100%;
+    height: 100%;
+    padding-right: 50px;
+    background-color: #003777;
+    padding-left: 20px;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+}
+.searchIput input:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+.searchIput input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+}
+
+.searchIput input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #fff;
+}
+
+.searchIput input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #fff;
+}
+.closeIcon {
+    min-width: 70px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.as-form {
+    border-bottom: 1px solid #c1b9b9;
+}
+.as-frndInput {
+    padding: 0 20px;
+}
+.as-frndInput input {
+    width: 100%;
+    border: none;
+    height: 50px;
+    font-size: 16px;
+}
+.as-frndInput input:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+.error {
+    color: #ff0000;
+    font-size: 12px;
+    padding: 0 20px;
+    border-top: 1px solid #c1b9b9;
+    display: block;
+}
+.as-friends {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+}
+.as-friends__left {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+}
+.as-friends__right {
+    flex: 0.2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+}
+.as-frndName {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+}
+.as-frndDet {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+}
+.as-icons {
+    border: 1px solid #003777;
+    padding: 5px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.as-pagination {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-top: 30px;
+}
+.as-pagination__item {
+    border-radius: 3px;
+    border: 1px solid #003777;
+    margin: 0 3px;
+}
+.as-pagination__item--link {
+    text-decoration: none;
+    color: #003777;
+    font-size: 14px;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+.activePagination {
+    background-color: #003777;
+}
+.activePagination .as-pagination__item--link {
+    color: #fff;
+}
+.as-empty {
+    padding: 20px;
+    text-align: center;
+}
+.as-sortWrp {
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: transparent;
+    border-bottom: 1px solid #ddd;
+}
+.as-sorting {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: center;
+}
+.as-sorting__selector {
+    width: 100%;
+    text-align: right;
+    cursor: pointer;
+}
+.as-sorting__dropdown {
+    list-style: none;
+    position: absolute;
+    top: 27px;
+    background: #fff;
+    box-shadow: 0px 0px 6px 0px rgb(0 0 0 / 30%);
+}
+.as-sorting__selector--list {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.ab-downArrow {
+    margin-left: 3px;
+}
+.down {
+    transform: rotate(-31deg);
+}
+.up {
+    transform: rotate(-210deg);
+    top: 3px;
+    position: relative;
+}
