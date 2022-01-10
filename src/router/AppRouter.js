@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import store from '../store';
 import { PersistGate } from 'redux-persist/integration/react'
 import { persistor } from '../store'
+import Task from '../pages/Task';
 const AppRouter = () => {
 
     return (
@@ -12,7 +13,7 @@ const AppRouter = () => {
             <PersistGate persistor={persistor}>
                 <BrowserRouter>
                     <Switch>
-                        <Route component={Home} path="/" exact={true} />
+                        <Route component={Task} path="/" exact={true} />
                     </Switch>
                 </BrowserRouter>
             </PersistGate>

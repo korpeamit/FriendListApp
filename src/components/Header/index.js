@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 import Icon from "../../assets/Fonts/Iocns";
 import SearchBar from '../SearchBar';
 const Header = (props) => {
-    let { term, searchKeyword } = props;
-    const [isVisibleSearch, setVisibleSearch] = useState(false);
+    let { term, searchKeyword, onClickSearch, isVisibleSearch } = props;
+    // const [isVisibleSearch, setVisibleSearch] = useState(false);
 
-    function onClickSearch() {
-        setVisibleSearch(!isVisibleSearch);
-    }
+    // function onClickSearch() {
+    //     setVisibleSearch(!isVisibleSearch);
+    // }
 
     return (
         <div className="as-header">

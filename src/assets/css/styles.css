@@ -230,3 +230,49 @@ body {
     top: 3px;
     position: relative;
 }
+.as-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.as-ticTak {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.as-ticTak__row {
+    width: 33%;
+    height: 80px;
+    border: 1px solid #000; 
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

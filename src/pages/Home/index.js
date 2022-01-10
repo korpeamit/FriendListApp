@@ -12,6 +12,7 @@ const Home = () => {
     const [listPerPage] = useState(4);
     const [serachTerm, setSerachTerm] = useState("");
     const [searchResult, setSearchResult] = useState([]);
+    const [isVisibleSearch, setVisibleSearch] = useState(false);
 
     // Get cureent posts
     const indexOfLastPost = currentPage * listPerPage;
@@ -34,9 +35,16 @@ const Home = () => {
         }
     }
 
+    function onClickSearch() {
+        setVisibleSearch(!isVisibleSearch);
+        if (isVisibleSearch) {
+            setSearchResult(currentFriendList);
+        }
+    }
+
     return (
         <div>
-            <Header term={serachTerm} searchKeyword={searchHandler.bind(this)}></Header>
+            <Header term={serachTerm} searchKeyword={searchHandler.bind(this)} onClickSearch={onClickSearch} isVisibleSearch={isVisibleSearch}></Header>
             <AddNewFriends></AddNewFriends>
             <Sorting></Sorting>
             <FriendsRow friendsList={serachTerm.length < 1 ? currentFriendList : searchResult}></FriendsRow>
